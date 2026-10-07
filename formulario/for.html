@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Solicitar Servicio Técnico</title>
+
+    <link rel="stylesheet" href="for.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ENCABEZADO -->
+
+    <header>
+
+        <h1>SOLICITAR SERVICIO TÉCNICO</h1>
+
+        <p>
+            Completa el siguiente formulario para solicitar
+            un servicio técnico para tu consola.
+        </p>
+
+    </header>
+
+
+    <main>
+
+
+        <form id="formularioServicio">
+
+
+            <!-- =========================
+                 DATOS DEL CLIENTE
+            ========================== -->
+
+            <section>
+
+                <h2>Datos del cliente</h2>
+
+
+                <label for="nombres">
+                    Nombres:
+                </label>
+
+                <input
+                    type="text"
+                    id="nombres"
+                    name="nombres"
+                    required
+                >
+
+
+                <label for="apellidos">
+                    Apellidos:
+                </label>
+
+                <input
+                    type="text"
+                    id="apellidos"
+                    name="apellidos"
+                    required
+                >
+
+
+                <label for="telefono">
+                    Teléfono:
+                </label>
+
+                <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    required
+                >
+
+
+                <label for="correo">
+                    Correo electrónico:
+                </label>
+
+                <input
+                    type="email"
+                    id="correo"
+                    name="correo"
+                    required
+                >
+
+            </section>
+
+
+
+            <!-- =========================
+                 DATOS DE LA CONSOLA
+            ========================== -->
+
+            <section>
+
+                <h2>Datos de la consola</h2>
+
+
+                <label for="consola">
+                    Tipo de consola:
+                </label>
+
+                <select
+                    id="consola"
+                    name="consola"
+                    required
+                >
+
+                    <option value="">
+                        Seleccione una consola
+                    </option>
+
+                    <option value="playstation">
+                        PlayStation
+                    </option>
+
+                    <option value="xbox">
+                        Xbox
+                    </option>
+
+                    <option value="nintendo">
+                        Nintendo
+                    </option>
+                    
+
+                </select>
+
+
+
+                <label for="modelo">
+                    Modelo:
+                </label>
+
+                <select
+                    id="modelo"
+                    name="modelo"
+                    required
+                >
+
+                    <option value="">
+                        Seleccione un modelo
+                    </option>
+
+                </select>
+
+            </section>
+
+
+
+            <!-- =========================
+                 SERVICIO TÉCNICO
+            ========================== -->
+
+            <section>
+
+                <h2>Servicio técnico</h2>
+
+
+                <label for="servicio">
+                    Seleccione el servicio:
+                </label>
+
+                <select
+                    id="servicio"
+                    name="servicio"
+                    required
+                    
+                >
+
+                    <option value="">
+                        Seleccione un servicio
+                    </option>
+
+
+                    <option value="mantenimiento|80">
+                        Mantenimiento de Consolas - S/ 80
+                    </option>
+
+
+                    <option value="controles|50">
+                        Reparación de Controles - S/ 50
+                    </option>
+
+
+                    <option value="diagnostico|40">
+                        Diagnóstico de Fallas - S/ 40
+                    </option>
+
+
+                    <option value="reparacion|150">
+                        Reparación de Consolas - S/ 150
+                    </option>
+
+
+                    <option value="puertos|60">
+                        Limpieza de Puertos - S/ 60
+                    </option>
+
+
+                    <option value="hdmi|120">
+                        Reparación de HDMI - S/ 120
+                    </option>
+
+
+                    <option value="almacenamiento|100">
+                        Cambio de Almacenamiento - S/ 100
+                    </option>
+
+
+                    <option value="fuente|130">
+                        Reparación de Fuente - S/ 130
+                    </option>
+
+
+                    <option value="encendido|70">
+                        Problemas de Encendido - S/ 70
+                    </option>
+
+
+                    <option value="ventilacion|80">
+                        Sistema de Ventilación - S/ 80
+                    </option>
+
+                </select>
+
+
+
+                <!-- PRECIO -->
+
+                <div id="precioServicio">
+
+                    Precio: S/ 0
+
+                </div>
+
+
+
+                <label for="problema">
+
+                    Descripción del problema:
+
+                </label>
+
+
+                <textarea
+                    id="problema"
+                    name="problema"
+                    rows="5"
+                    placeholder="Describe el problema que presenta tu consola..."
+                ></textarea>
+
+            </section>
+
+
+
+            <!-- =========================
+                 BOTONES
+            ========================== -->
+
+            <section>
+
+                <button type="submit">
+
+                    Enviar solicitud
+
+                </button>
+
+
+                <button type="reset">
+
+                    Limpiar formulario
+
+                </button>
+
+            </section>
+
+
+        </form>
+
+
+    </main>
+
+
+
+    <!-- =========================
+         PIE DE PÁGINA
+    ========================== -->
+
+    <footer>
+
+
+        <a
+            href="#"
+            id="volverConsola"
+        >
+           <!-- Volver a la página de la consola-->
+        </a>
+
+
+        <br><br>
+
+
+        <a href="../index.html">
+
+            Volver a la página principal
+
+        </a>
+
+
+    </footer>
+
+
+
+   
+
+    <script src="for.js"></script>
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: Arial, sans-serif;
+background-color: #101018;
+color: white;
+}
+
+/* Encabezado */
+
+header {
+background-color: #17172b;
+text-align: center;
+padding: 40px 20px;
+border-bottom: 3px solid #006fcd;
+}
+
+header h1 {
+font-size: 36px;
+margin-bottom: 10px;
+}
+
+header p {
+font-size: 18px;
+color: #cccccc;
+}
+
+/* Contenido */
+
+main {
+width: 90%;
+max-width: 1200px;
+margin: 40px auto;
+}
+
+section h2 {
+text-align: center;
+margin-bottom: 30px;
+font-size: 28px;
+}
+
+/* Tarjetas */
+
+section > div {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 25px;
+}
+
+article {
+background-color: #1b1b29;
+width: 220px;
+padding: 20px;
+border-radius: 12px;
+text-align: center;
+border: 1px solid #303044;
+}
+
+article h3 {
+margin-bottom: 15px;
+color: #ffffff;
+}
+
+article img {
+width: 100%;
+height: 150px;
+object-fit: contain;
+margin-bottom: 15px;
+}
+
+article p {
+font-size: 14px;
+line-height: 1.5;
+color: #cccccc;
+margin-bottom: 20px;
+}
+
+/* Botón */
+
+article a {
+display: inline-block;
+background-color: #006fcd;
+color: white;
+text-decoration: none;
+padding: 10px 15px;
+border-radius: 6px;
+}
+
+article a:hover {
+background-color: #0088ff;
+}
+
+/* Pie de página */
+
+footer {
+text-align: center;
+padding: 30px;
+background-color: #17172b;
+margin-top: 40px;
+}
+
+footer a {
+color: white;
+text-decoration: none;
+}
+
+footer a:hover {
+color: #0088ff;
+}

@@ -1,0 +1,137 @@
+
+/* ESTILO GENERAL */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+}
+
+
+/* ENCABEZADO */
+
+header {
+    background-color: #e60012;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 35px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+
+/* CONTENIDO PRINCIPAL */
+
+main {
+    padding: 30px;
+}
+
+section h2 {
+    text-align: center;
+    color: #e60012;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+
+/* CONTENEDOR DE LAS CONSOLAS */
+
+section > div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+
+/* TARJETAS */
+
+article {
+    background-color: white;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    border: 2px solid #e60012;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+
+/* IMÁGENES */
+
+article img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+}
+
+
+/* TÍTULOS */
+
+article h3 {
+    color: #e60012;
+    font-size: 22px;
+}
+
+
+/* DESCRIPCIÓN */
+
+article p {
+    line-height: 1.5;
+}
+
+
+/* BOTÓN */
+
+article a {
+    display: inline-block;
+    background-color: #e60012;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+
+/* EFECTO DEL BOTÓN */
+
+article a:hover {
+    background-color: #b0000d;
+}
+
+
+/* EFECTO DE LAS TARJETAS */
+
+article:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 18px rgba(230, 0, 18, 0.4);
+}
+
+
+/* PIE DE PÁGINA */
+
+footer {
+    background-color: #222;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #e60012;
+}

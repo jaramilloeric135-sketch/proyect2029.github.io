@@ -1,0 +1,905 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Servicio Técnico de Consolas</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Iconos de Font Awesome -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+
+    <header class="main-header">
+
+        <div class="nav-container">
+
+            <div class="logo">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>TechGames Info</span>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="nav-menu" id="navMenu">
+
+                <ul>
+
+                    <li>
+                        <a href="#servicios">Servicios</a>
+                    </li>
+
+
+                    <!-- MENÚ DE CONSOLAS -->
+
+                    <li class="dropdown">
+
+                        <button class="dropdown-btn" id="dropdownBtn" aria-expanded="false">
+
+                            Consolas
+
+                            <i class="fa-solid fa-chevron-down"></i>
+
+                        </button>
+
+
+                        <div class="dropdown-content" id="myDropdown">
+
+                            <a href="playstation/play.html" data-console="playstation">
+
+                                <i class="fa-brands fa-playstation"></i>
+
+                                PlayStation
+
+                            </a>
+
+
+                            <a href="xbox/xbox.html" data-console="xbox">
+
+                                <i class="fa-brands fa-xbox"></i>
+
+                                Xbox
+
+                            </a>
+
+
+                            <a href="nintendo/ninte.html" data-console="nintendo">
+
+                                <i class="fa-solid fa-gamepad"></i>
+
+                                Nintendo
+
+                            </a>
+
+                        </div>
+
+                    </li>
+
+
+                    <li>
+                        <a href="contacto/conc.html">Contacto</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+
+        <!-- PRESENTACIÓN -->
+
+        <div class="hero-content">
+
+            <h1>SERVICIO TÉCNICO DE CONSOLAS</h1>
+
+            <p>
+                Nos motiva reparar, ofrecer el mejor mantenimiento
+                e informar sobre el cuidado de tus consolas de videojuegos.
+            </p>
+
+            <a href="#servicios" class="btn-primary">
+
+                Ver Información de Servicios
+
+                <i class="fa-solid fa-arrow-down"></i>
+
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <main>
+
+
+        <!-- SERVICIOS -->
+
+        <section id="servicios" class="services-section">
+
+            <h2>Servicios Destacados</h2>
+
+
+            <div class="services-grid">
+
+
+                <!-- 1. MANTENIMIENTO -->
+
+                <article class="service-card"
+                    data-category="playstation xbox nintendo"
+                    data-info="El mantenimiento preventivo ayuda a conservar la consola en buenas condiciones y permite detectar posibles problemas antes de que se conviertan en fallas mayores.">
+
+                    <div class="card-image">
+
+                        <img src="fotos/imagen1.png"
+                            alt="Mantenimiento de consolas">
+
+                        <span class="badge">
+                            Preventivo
+                        </span>
+
+                    </div>
+
+
+                    <div class="card-body">
+
+                        <h3>
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                            Mantenimiento de Consolas
+                        </h3>
+
+
+                        <ul>
+
+                            <li>
+                                <i class="fa-solid fa-circle-info"></i>
+                                Limpieza interna y externa
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-info"></i>
+                                Revisión de temperatura
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-info"></i>
+                                Revisión general del sistema
+                            </li>
+
+                        </ul>
+
+
+                        <button class="btn-card">
+                            Saber más
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- 2. REPARACIÓN DE CONTROLES -->
+
+                <article class="service-card"
+                    data-category="playstation xbox nintendo"
+                    data-info="Servicio orientado a solucionar problemas en controles de PlayStation, Xbox y Nintendo.">
+
+
+                    <div class="card-image">
+
+                        <img src="fotos/imagen2.png"
+                            alt="Reparación de controles">
+
+                        <span class="badge">
+                            Accesorios
+                        </span>
+
+                    </div>
+
+
+                    <div class="card-body">
+
+                        <h3>
+
+                            <i class="fa-solid fa-gamepad"></i>
+
+                            Reparación de Controles
+
+                        </h3>
+
+
+                        <ul>
+
+                            <li>
+                                <i class="fa-solid fa-circle-info"></i>
+                                Revisión de botones
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-info"></i>
+                                Revisión de joysticks
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-info"></i>
+                                Revisión de conexiones
+                            </li>
+
+                        </ul>
+
+
+                        <button class="btn-card">
+                            Saber más
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- 3. DIAGNÓSTICO -->
+
+                <article class="service-card"
+                    data-category="playstation xbox nintendo"
+                    data-info="Evaluación técnica para identificar la causa de una falla antes de realizar una reparación.">
+
+
+                    <div class="card-image">
+
+                        <img src="fotos/imagen3.png"
+                            alt="Diagnóstico de fallas">
+
+                        <span class="badge">
+                            Análisis
+                        </span>
+
+                    </div>
+
+
+                    <div class="card-body">
+
+                        <h3>
+
+                            <i class="fa-solid fa-microchip"></i>
+
+                            Diagnóstico de Fallas
+
+                        </h3>
+
+
+                        <ul>
+
+                            <li>
+                                <i class="fa-solid fa-circle-info"></i>
+                                Identificación del problema
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-info"></i>
+                                Revisión de componentes
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-info"></i>
+                                Evaluación antes de reparar
+                            </li>
+
+                        </ul>
+
+
+                        <button class="btn-card">
+                            Saber más
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- 4. REPARACIÓN DE CONSOLAS -->
+
+                <article class="service-card"
+                    data-category="playstation xbox nintendo"
+                    data-info="Reparación de problemas de funcionamiento detectados durante el diagnóstico técnico.">
+
+
+                    <div class="card-image">
+
+                        <img src="fotos/imagen4.png"
+                            alt="Reparación de consolas">
+
+                        <span class="badge">
+                            Correctivo
+                        </span>
+
+                    </div>
+
+
+                    <div class="card-body">
+
+                        <h3>
+
+                            <i class="fa-solid fa-plug-circle-bolt"></i>
+
+                            Reparación de Consolas
+
+                        </h3>
+
+
+                        <ul>
+
+                            <li>
+                                <i class="fa-solid fa-circle-info"></i>
+                                Reparación según la falla
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-info"></i>
+                                Revisión del sistema
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-info"></i>
+                                Solución de problemas de funcionamiento
+                            </li>
+
+                        </ul>
+
+
+                        <button class="btn-card">
+                            Saber más
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- 5. LIMPIEZA DE PUERTOS -->
+
+                <article class="service-card"
+                    data-category="playstation xbox nintendo"
+                    data-info="Limpieza y revisión de los puertos y conectores de la consola para ayudar a mantener una conexión adecuada.">
+
+
+                    <div class="card-image">
+
+                        <img src="fotos/imagen5.png"
+                            alt="Limpieza de puertos">
+
+                        <span class="badge">
+                            Limpieza
+                        </span>
+
+                    </div>
+
+
+                    <div class="card-body">
+
+                        <h3>
+
+                            <i class="fa-solid fa-plug"></i>
+
+                            Limpieza de Puertos
+
+                        </h3>
+
+
+                        <ul>
+
+                            <li>
+                                <i class="fa-solid fa-circle-info"></i>
+                                Limpieza de conectores
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-info"></i>
+                                Revisión de puertos
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-info"></i>
+                                Revisión de conexiones
+                            </li>
+
+                        </ul>
+
+
+                        <button class="btn-card">
+                            Saber más
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- 6. REPARACIÓN HDMI -->
+
+                <article class="service-card"
+                    data-category="playstation xbox nintendo"
+                    data-info="Revisión y reparación de problemas relacionados con la salida HDMI de la consola.">
+
+
+                    <div class="card-image">
+
+                        <img src="fotos/imagen6.png"
+                            alt="Reparación de HDMI">
+
+                        <span class="badge">
+                            Video
+                        </span>
+
+                    </div>
+
+
+                    <div class="card-body">
+
+                        <h3>
+
+                            <i class="fa-solid fa-display"></i>
+
+                            Reparación de HDMI
+
+                        </h3>
+
+
+                        <ul>
+
+                            <li>
+                                <i class="fa-solid fa-circle-info"></i>
+                                Revisión del puerto HDMI
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-info"></i>
+                                Identificación de problemas de imagen
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-info"></i>
+                                Revisión de conexión de video
+                            </li>
+
+                        </ul>
+
+
+                        <button class="btn-card">
+                            Saber más
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- 7. ALMACENAMIENTO -->
+
+                <article class="service-card"
+                    data-category="playstation xbox nintendo"
+                    data-info="Revisión del almacenamiento interno de la consola y evaluación de posibles problemas relacionados con el disco o unidad de almacenamiento.">
+
+
+                    <div class="card-image">
+
+                        <img src="fotos/imagen7.png"
+                            alt="Cambio de almacenamiento">
+
+                        <span class="badge">
+                            Almacenamiento
+                        </span>
+
+                    </div>
+
+
+                    <div class="card-body">
+
+                        <h3>
+
+                            <i class="fa-solid fa-hard-drive"></i>
+
+                            Cambio de Almacenamiento
+
+                        </h3>
+
+
+                        <ul>
+
+                            <li>
+                                <i class="fa-solid fa-circle-info"></i>
+                                Revisión de la unidad
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-info"></i>
+                                Evaluación del almacenamiento
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-info"></i>
+                                Instalación de una nueva unidad
+                            </li>
+
+                        </ul>
+
+
+                        <button class="btn-card">
+                            Saber más
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- 8. FUENTE DE PODER -->
+
+                <article class="service-card"
+                    data-category="playstation xbox nintendo"
+                    data-info="Revisión de la fuente de alimentación de la consola cuando presenta problemas relacionados con el suministro eléctrico.">
+
+
+                    <div class="card-image">
+
+                        <img src="fotos/imagen8.png"
+                            alt="Reparación de fuente">
+
+                        <span class="badge">
+                            Eléctrico
+                        </span>
+
+                    </div>
+
+
+                    <div class="card-body">
+
+                        <h3>
+
+                            <i class="fa-solid fa-bolt"></i>
+
+                            Reparación de Fuente
+
+                        </h3>
+
+
+                        <ul>
+
+                            <li>
+                                <i class="fa-solid fa-circle-info"></i>
+                                Revisión de alimentación
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-info"></i>
+                                Identificación de fallas eléctricas
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-info"></i>
+                                Evaluación de la fuente
+                            </li>
+
+                        </ul>
+
+
+                        <button class="btn-card">
+                            Saber más
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- 9. PROBLEMAS DE ENCENDIDO -->
+
+                <article class="service-card"
+                    data-category="playstation xbox nintendo"
+                    data-info="Diagnóstico de consolas que presentan problemas para encender o iniciar correctamente.">
+
+
+                    <div class="card-image">
+
+                        <img src="fotos/imagen9.png"
+                            alt="Problemas de encendido">
+
+                        <span class="badge">
+                            Diagnóstico
+                        </span>
+
+                    </div>
+
+
+                    <div class="card-body">
+
+                        <h3>
+
+                            <i class="fa-solid fa-power-off"></i>
+
+                            Problemas de Encendido
+
+                        </h3>
+
+
+                        <ul>
+
+                            <li>
+                                <i class="fa-solid fa-circle-info"></i>
+                                Revisión del sistema de encendido
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-info"></i>
+                                Identificación de la falla
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-info"></i>
+                                Evaluación de componentes
+                            </li>
+
+                        </ul>
+
+
+                        <button class="btn-card">
+                            Saber más
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+               
+
+                <article class="service-card"
+                    data-category="playstation xbox nintendo"
+                    data-info="Revisión y limpieza del sistema de ventilación para ayudar a mantener una temperatura adecuada durante el funcionamiento.">
+
+
+                    <div class="card-image">
+
+                        <img src="fotos/imagen10.png"
+                            alt="Sistema de ventilación">
+
+                        <span class="badge">
+                            Refrigeración
+                        </span>
+
+                    </div>
+
+
+                    <div class="card-body">
+
+                        <h3>
+
+                            <i class="fa-solid fa-fan"></i>
+
+                            Sistema de Ventilación
+
+                        </h3>
+
+
+                        <ul>
+
+                            <li>
+                                <i class="fa-solid fa-circle-info"></i>
+                                Revisión del ventilador
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-info"></i>
+                                Limpieza de ventilación
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-info"></i>
+                                Revisión del flujo de aire
+                            </li>
+
+                        </ul>
+
+
+                        <button class="btn-card">
+                            Saber más
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+       
+
+        <section id="guias" class="info-section">
+
+            <h2>
+
+                <i class="fa-solid fa-lightbulb"></i>
+
+                Consejos de Mantenimiento Preventivo
+
+            </h2>
+
+
+            <div class="tips-grid">
+
+
+                <div class="tip-box">
+
+                    <i class="fa-solid fa-wind"></i>
+
+                    <h4>
+                        Buena Ventilación
+                    </h4>
+
+                    <p>
+                        Ubica tu consola en un espacio abierto,
+                        alejada de paredes y lugares cerrados
+                        para favorecer la circulación del aire.
+                    </p>
+
+                </div>
+
+
+                <div class="tip-box">
+
+                    <i class="fa-solid fa-broom"></i>
+
+                    <h4>
+                        Ubicación y Polvo
+                    </h4>
+
+                    <p>
+                        Limpia frecuentemente el polvo alrededor
+                        de las rejillas de ventilación y evita
+                        colocar la consola sobre superficies que
+                        bloqueen el flujo de aire.
+                    </p>
+
+                </div>
+
+
+                <div class="tip-box">
+
+                    <i class="fa-solid fa-bolt"></i>
+
+                    <h4>
+                        Protección Eléctrica
+                    </h4>
+
+                    <p>
+                        Utiliza protección eléctrica adecuada para
+                        reducir el riesgo de daños ocasionados por
+                        fluctuaciones de voltaje.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+
+    <div id="infoModal" class="modal">
+
+        <div class="modal-content">
+
+            <span class="close-modal">
+                &times;
+            </span>
+
+            <h3 id="modalTitle">
+                Título de Información
+            </h3>
+
+            <p id="modalDescription">
+                Descripción detallada...
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+   
+
+    <footer id="contacto" class="main-footer">
+
+        <div class="footer-container">
+
+
+            <div class="footer-info">
+
+                <h3>
+                    Servicio Técnico de Consolas
+                </h3>
+
+                <p>
+                    Información clara y transparente sobre
+                    mantenimiento, diagnóstico y soluciones
+                    técnicas para plataformas de videojuegos.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>
+                    Contacto Directo
+                </h4>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    techgamesinfo@gmail.com
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +51 156 364 128
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; Derechos reservados Eric Omer Jaramillo Moreno 
+                2026 Servicio Técnico de Consolas.
+                Portal puramente informativo.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+   
+
+    <script src="doc.js"></script>
+
+</body>
+
+</html>
+

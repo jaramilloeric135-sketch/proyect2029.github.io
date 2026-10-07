@@ -1,0 +1,249 @@
+
+/* =========================
+   ESTILOS GENERALES
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0d0d0d;
+    color: white;
+}
+
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+header {
+    background-color: #151515;
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 2px solid #00ff66;
+}
+
+header h1 {
+    margin: 0 0 15px;
+    color: #00ff66;
+    font-size: 36px;
+}
+
+header p {
+    margin: 0 auto;
+    max-width: 700px;
+    color: #cccccc;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CONTENIDO PRINCIPAL
+========================= */
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+section {
+    background-color: #151515;
+    padding: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+
+section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #00ff66;
+}
+
+section p {
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   PRESENTACIÓN
+========================= */
+
+.bienvenida {
+    text-align: center;
+}
+
+.bienvenida p {
+    max-width: 750px;
+    margin: 10px auto;
+}
+
+
+/* =========================
+   TARJETAS DE CONTACTO
+========================= */
+
+.contactos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.contactos article {
+    background-color: #101010;
+    padding: 25px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.contactos article:hover {
+    border-color: #00ff66;
+    transform: translateY(-5px);
+}
+
+.contactos h3 {
+    color: #00ff66;
+    margin-top: 0;
+}
+
+.contactos p {
+    margin-bottom: 5px;
+}
+
+
+/* =========================
+   UBICACIÓN
+========================= */
+
+.ubicacion-section {
+    text-align: center;
+}
+
+.ubicacion {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 12px 20px;
+    background-color: #101010;
+    border: 1px solid #00ff66;
+    border-radius: 6px;
+    color: #00ff66;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ubicacion:hover {
+    background-color: #00ff66;
+    color: black;
+}
+
+
+/* =========================
+   SERVICIOS
+========================= */
+
+.servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.servicios article {
+    background-color: #101010;
+    padding: 25px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.servicios article:hover {
+    border-color: #00ff66;
+    transform: translateY(-5px);
+}
+
+.servicios h3 {
+    color: #00ff66;
+    margin-top: 0;
+}
+
+
+/* =========================
+   SOLICITAR SERVICIO
+========================= */
+
+.solicitar {
+    text-align: center;
+    border-color: #00ff66;
+}
+
+.solicitar a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 13px 25px;
+    background-color: #00ff66;
+    color: black;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.solicitar a:hover {
+    background-color: #00cc52;
+}
+
+
+/* =========================
+   PIE DE PÁGINA
+========================= */
+
+footer {
+    background-color: #151515;
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid #333;
+}
+
+footer a {
+    color: #00ff66;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    color: #777777;
+}
+
+
+/* =========================
+   DISEÑO RESPONSIVO
+========================= */
+
+@media (max-width: 650px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .contactos,
+    .servicios {
+        grid-template-columns: 1fr;
+    }
+}
